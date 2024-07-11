@@ -163,7 +163,7 @@ include::{common_tests_path}/src/main/java/org/springframework/cloud/sleuth/inst
 [[sleuth-async-troubleshooting]]
 ==== Troubleshooting Async Configuration Issues
 
-Sine Sleuth uses a Bean Post Processor (BPP) to modify executors the `Executor` type that you provided will be modified and the return type will be the trace version of that executor. That can lead to exceptions simillar to this
+Since Sleuth uses a Bean Post Processor (BPP) to modify executors the `Executor` type that you provided will be modified and the return type will be the trace version of that executor. That can lead to exceptions simillar to this
 
 ```
 12:12:49.606 [main] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2401f4c3, started on Wed Jan 19 12:12:49 GMT 2022
